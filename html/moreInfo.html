@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>更多信息</title>
+    <!--360 使用chrome-->
+    <meta name="renderer" content="webkit">
+    <!--如果安装了 Google Chrome Frame，则使用 GCF 来渲染页面，如果没有安装 GCF，则使用最高版本的 IE 内核进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!--禁止百度转码-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <!--禁止缓存-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="stylesheet" type="text/css" href="../less/basic.css">
+</head>
+<body>
+	<div class="wx-wrapper">
+		<p class="remind">为保证借款申请顺利通过，请务必填写真实信息</p>
+		<div class="content">
+			<ul class="list">
+				<li class="no-pad">
+					淘宝账号
+					<div class="enterText">
+						<input type="text" name="taobao" class="taobao" id="taobao" placeholder="请填写淘宝账号">
+					</div>
+				</li>
+				<li class="no-pad">
+					常用邮箱
+					<div class="enterText">
+						<input type="text" name="email" class="email" id="email" placeholder="请填写常用邮箱">
+					</div>
+				</li>
+				<li class="no-pad">
+					QQ账号
+					<div class="enterText">
+						<input type="text" name="qq" class="qq" id="qq" placeholder="请填写QQ账号">
+					</div>
+				</li>
+				<li class="no-pad">
+					微信账号
+					<div class="enterText">
+						<input type="text" name="wechat" class="wechat" id="wechat" placeholder="请填写微信账号">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer"><button class="btn" onclick="window.location.href='infoList.html'">完 成</button></div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/common/common.js"></script>
+</html>

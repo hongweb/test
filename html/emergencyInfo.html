@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>紧急联系人</title>
+	<!--360 使用chrome-->
+    <meta name="renderer" content="webkit">
+    <!--如果安装了 Google Chrome Frame，则使用 GCF 来渲染页面，如果没有安装 GCF，则使用最高版本的 IE 内核进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!--禁止百度转码-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <!--禁止缓存-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="stylesheet" type="text/css" href="../less/basic.css">
+</head>
+<body>
+<div class="wx-wrapper">
+	<div class="content">
+			<ul class="list">
+				<li class="cut no-pad">直系亲属</li>
+				<li class=" no-pad">
+					与本人关系
+					<div class="selectOp right">
+						<select dir="rtl">
+							<option value="0">请选择</option>
+							<option value="1">请选择1</option>
+							<option value="2">请选择2</option>
+						</select>
+					</div>
+				</li>
+				<li class="no-pad">
+					身份证号码
+					<div class="enterText">
+						<input type="text" name="idCard" class="idCard" id="idCard" placeholder="请输入" maxlength="18">
+					</div>
+				</li>
+				<li class="cut no-pad">其他联系人</li>
+				<li class=" no-pad">
+					与本人关系
+					<div class="selectOp right">
+						<select dir="rtl">
+							<option value="0">请选择</option>
+							<option value="1">请选择1</option>
+							<option value="2">请选择2</option>
+						</select>
+					</div>
+				</li>
+				<li class="no-pad">
+					身份证号码
+					<div class="enterText">
+						<input type="text" name="idCard" class="idCard" id="idCard" placeholder="请输入" maxlength="18">
+					</div>
+				</li>
+			</ul>
+	</div>
+	<div class="footer"><button class="btn" onclick="window.location.href='infoList.html'">完 成</button></div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="../js/common/common.js"></script>
+</html>

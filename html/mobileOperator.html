@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机运营商</title>
+    <!--360 使用chrome-->
+    <meta name="renderer" content="webkit">
+    <!--如果安装了 Google Chrome Frame，则使用 GCF 来渲染页面，如果没有安装 GCF，则使用最高版本的 IE 内核进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!--禁止百度转码-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <!--禁止缓存-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="stylesheet" type="text/css" href="../less/basic.css">
+</head>
+<body>
+<div class="wx-wrapper">
+	<div class="content">
+			<ul class="list">
+				<li class="no-pad">
+					手机号码
+					<input type="tel" name="tel" id="tel" class="inlineInput" maxlength="11" value="13123456789">
+				</li>
+				<li class="no-pad">
+					<div class="leftPart">
+							服务密码
+							<input type="tel" name="password" id="password" class="inlineInput servicePas" maxlength="6" placeholder="输入手机服务密码">
+					</div>
+					<div class="">
+							<span class="forgetPas" id="forgetPas">忘记密码？</span>
+					</div>
+				</li>
+			</ul>
+			<div class="remindMsg">
+				<h3>温馨提示</h3>
+				<p>1.请输入正确的运营商（移动、联通、电信）服务密码，如若忘记可通过拨打运营商服务电话或者登陆网上营业厅找回密码；</p>
+ 				<p>2.运营商认证需要2~3分钟，请耐心等待。</p>
+			</div>
+	</div>
+	<div class="footer"><button class="btn" onclick="">确 认</button></div>
+</div>
+	
+</body>
+<script type="text/javascript" src="../js/common/common.js"></script>
+</html>

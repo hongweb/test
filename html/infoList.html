@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>认证中心</title>
+    <!--360 使用chrome-->
+    <meta name="renderer" content="webkit">
+    <!--如果安装了 Google Chrome Frame，则使用 GCF 来渲染页面，如果没有安装 GCF，则使用最高版本的 IE 内核进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!--禁止百度转码-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <!--禁止缓存-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="stylesheet" type="text/css" href="../less/basic.css">
+</head>
+<body>
+	<div class="wx-wrapper">
+		<p class="linkTo" data-url="">使用小额宝APP申请借款通过率将提高10倍</p>
+		<div class="content">
+			<ul class="list">
+				<li onclick="window.location.href='basicInfo.html'">
+					<div class="leftIcon basic"></div>
+					<div class="left">
+						<p class="normal">个人信息<span class="remainMsg">（必填）</span></p>
+						<p class="small">让我们知道最真实的你</p>
+					</div>
+					<div class="right">
+						<span class="notComp">未完善</span>
+					</div>
+				</li>
+				<li onclick="window.location.href='emergencyInfo.html'">
+					<div class="leftIcon emergency"></div>
+					<div class="left">
+						<p class="normal">紧急联系人<span class="remainMsg">（必填）</span></p>
+						<p class="small">特殊情况，可以帮我们联系到您</p>
+					</div>
+					<div class="right">
+						<span class="comp">未完善</span>
+					</div>
+				</li>
+				<li onclick="window.location.href='business.html'">
+					<div class="leftIcon bussiness"></div>
+					<div class="left">
+						<p class="normal">电商信息<span class="remainMsg">（必填）</span></p>
+						<p class="small">电商信息</p>
+					</div>
+					<div class="right">
+						<span class="comp">未完善</span>
+					</div>
+				</li>
+				<li onclick="window.location.href='mobileOperator.html'">
+					<div class="leftIcon tel"></div>
+					<div class="left">
+						<p class="normal">手机运营商<span class="remainMsg">（必填）</span></p>
+						<p class="small">手机运营商认证有助于加快审批</p>
+					</div>
+					<div class="right">
+						<span>未完善</span>
+					</div>
+				</li>
+				<li onclick="window.location.href='work.html'">
+					<div class="leftIcon work"></div>
+					<div class="left">
+						<p class="normal">工作信息<span class="ignoreMsg">（选填）</span></p>
+						<p class="small">让我们知道您在做什么</p>
+					</div>
+					<div class="right">
+						<span class="notComp"><a class="comp">6</a><a class="notComp">/8</a></span>
+					</div>
+				</li>
+				<li onclick="window.location.href='moreInfo.html'">
+					<div class="leftIcon moreinfo"></div>
+					<div class="left">
+						<p class="normal">更多信息<span class="ignoreMsg">（选填）</span></p>
+						<p class="small">补充可以增加通过概率</p>
+					</div>
+					<div class="right">
+						<span>未完善</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<button disabled class="bottomBtn">去借款</button>
+	</div>
+
+
+	<div class="dialog" style="display: none;">
+		<div class="inner">
+			<div class="guide">
+				<i class="icon close icon-close-circle" onclick="hideDialog"></i>
+				<div class="header">重要提示</div>
+				<div class="pic"></div>
+				<div class="tips">使用小额宝APP申请借款，<br>通过率将提高10倍哦！</div>
+				<div class="goApp" onclick="">去APP借钱</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/common/common.js"></script>
+</body>
+</html>

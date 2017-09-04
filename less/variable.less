@@ -1,0 +1,198 @@
+@form-g: form-group;
+@inp-g: input-group;
+
+@bg: background;
+@b: bottom;
+@t: top;
+@c: color;
+@l: left;
+@r: right;
+@h: height;
+@w: width;
+
+@pri: primary;
+
+
+@images: "../images";
+@white-c: #fff;
+@spacing: 0.4rem;
+@body-bg: #F0EFF5;
+@txt-w: #d17b19;
+@font-c: #333;
+@blue-c:#3E5ECD;
+@remain-c:#E67522;
+@unable-c:@font-c + 152;
+
+
+@blue-border: 1px solid @blue-c; 
+@grey-border: 1px solid @font-c + 153; 
+@border: 0.5pt solid #979797;
+@cm-h: 1rem;
+@font-s:0.38rem;
+
+@normal-radius: 5px;
+@order-radius: 10px;
+
+.border-radius(@x){
+	border-radius: @x;
+}
+
+.box-shadow(){
+	box-shadow: 0 0 10px 1px #999;
+}
+
+.font-lgs() {
+	font-size: @cm-h + 0.2;
+}
+
+.font-lg() {
+	font-size: @cm-h;
+}
+
+.font-md(){
+	font-size: @cm-h/2;
+}
+
+.font-nm-h3() {//normal font-size
+	font-size: 0.72rem/2;
+}
+
+.font-nm() {//normal font-size
+	font-size: 0.68rem/2;
+}
+
+.font-sm() {//smaller
+	font-size: 0.56rem/2;
+}
+
+.font-sms(){ //smallest
+	font-size: 0.48rem/2;
+}
+
+.txt-center() {
+	text-align: center;
+}
+
+.txt-left() {
+	text-align: left;
+}
+
+.txt-right() {
+	text-align: right;
+}
+
+.margin-auto(@x) {
+	margin: @x auto;
+}
+
+.no-margin(){
+	margin:0;
+}
+
+.margin-t(@x) {
+	margin-@{t}: @x;
+}
+
+.block() {
+	display: block;
+}
+
+.in-block() {
+	display: inline-block;
+}
+
+.radius(@x){
+	-webkit-border-radius: @x;
+	-moz-border-radius: @x;
+	border-radius: @x;
+}
+
+
+.no-border(){
+	border: none;
+}
+
+.text-w(){
+	@{c}: @white-c;
+}
+
+.placeholder-c(@x) {
+	/**placeholder 字体颜色 */
+	input::-webkit-input-placeholder { /* Webkit browsers*/
+	    color:@x !important;
+	}
+
+	input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color:@x !important;
+	}
+
+	input:-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color:@x !important;
+	}
+
+	input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	    color:@x !important;
+	}
+}
+
+.placeholder-font-lg(){
+	input::-webkit-input-placeholder { /* Webkit browsers*/
+	    .font-lg();
+	}
+
+	input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    .font-lg();
+	}
+
+	input:-moz-placeholder { /* Mozilla Firefox 19+ */
+	    .font-lg();
+	}
+
+	input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	    .font-lg();
+	}
+}
+
+.placeholder-font-md(){
+	input::-webkit-input-placeholder { /* Webkit browsers*/
+	    .font-md();
+	}
+
+	input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    .font-md();
+	}
+
+	input:-moz-placeholder { /* Mozilla Firefox 19+ */
+	    .font-md();
+	}
+
+	input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	    .font-md();
+	}
+}
+
+.ios-btn-font() {
+	font-family: PingFang-SC-Semibold;
+}
+
+.ios-inp-font(){
+	font-family: PingFangSC-Light;
+}
+
+.ios-list-font(){
+	font-family: PingFangSC-Regular;
+}
+
+.height(@x){
+	@{h}: @x;
+	line-@{h}: @x; 
+}
+
+.width-full() {
+	width: 100%;
+}
+
+.no-pm() {
+	padding: 0;
+	margin: 0;
+}

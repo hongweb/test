@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import url("variable");
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body * {
+	font-size:@font-s - 0.08;
+	@{c}: @font-c + 51;
+	/* font-family: Open Sans, Helvetica Neue, Arial,
+			Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif; */
+	font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+					"Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;		
+}
+
+.wrapper-bg {
+	@{bg}: @body-bg;
+}
+
+/*******custom*******/
+.block {
+	display: block;
+}
+
+//隐藏 hide add by tyt
+.hide{
+	display: none !important;
+}
+//不显示
+.hidden{
+	visibility: hidden !important;
+}
+//左浮动
+.lf{
+	float:left !important;
+}
+//右浮动
+.rf{
+	float:right !important;
+}
+.no-margin-top{
+	margin-top:0 !important;
+}
+//end add
+
+
+.width-full {
+	width: 100% !important;
+}
+
+
+.margin-b {
+	margin-bottom: @spacing;
+}
+
+.no-bg {
+	background: none;
+}
+
+.txt-warning {
+	@{c}: @txt-w;
+}
+
+.normalBtn(){
+	.border-radius(5px);
+	@{bg}:@blue-c;
+	@{c}:@white-c;
+	font-size:@font-s - 0.08;
+	.block();
+	@{w}: 80%;
+	.no-border();
+	margin: 0 auto;
+	.height(@cm-h - 0.2);
+	&:disabled{
+		@{bg}:@font-c + 152;
+	}
+}
+
+
+/*******package********/
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	// .width-full;
+}
+
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a, i, ul, li,label, hr, p, span, footer, div {
+	-webkit-touch-callout: none;/**touch*/
+	-webkit-touch-callout:none;
+    -moz-touch-callout:none;
+    -ms-touch-callout:none;
+	touch-callout:none;
+	-webkit-user-select: none; /**user-select*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/**input内阴影 --ios*/
+input, textarea, a {
+	outline: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+//placeholder color
+.placeholder-c(@font-c + 153);
+
+@media screen and (min-width:750px){
+	body {
+		font-size: 18px;
+	}
+}
+
+//v-cloak 防止页面加载时出现 vuejs 的变量名
+[v-cloak] {
+	.hide;
+}
